@@ -1,24 +1,28 @@
-
-<script>function showPass(form , e){
+<script>
+function showPass(form, e) {
     e.preventDefault();
     var pass = form.pwd.value;
-    var pass1 = "Lebron";
-    var pass2 = "LebronJames";
-    if(pass == pass1 || pass == pass1)
-    {
-       alert('Hello, moderator!'); open("/udeqhughe4uhrgvuhs4udrgurhuvhuhtuhghurhuedhuhufruhurhruhfruhfruhuhruhfurhrhfumodschat.html","_self");
-    }
-    else{
-        
-        if(pass == pass2 || pass == pass2) {alert("Welcome Back!"); open("/aijsidjijijreidhiuesgrskugddygyfyrgyegyrggrysfegcyfrygifroburfu.html","_self");} else {alert("Incorrect password. Check the stream for the current password.");}
+    var pass1 = "chat1";
+    var pass2 = "chat2";
+    var pass3 = "chat3";
+
+    if (pass === pass1) {
+        alert('Welcome to Chat 1.');
+        window.location.href = "chat1.html";
+    } else if (pass === pass2) {
+        alert("Welcome to Chat 2.");
+        window.location.href = "chat2.html";
+    } else if (pass === pass3) {
+        alert("Welcome to Chat 3.");
+        window.location.href = "chat3.html";
+    } else {
+        alert("Incorrect access code.");
     }
 }
 </script>
-<form style="font-family: 'Lucida Console', 'Courier New', monospace;
-" onSubmit = "showPass(this , event)">
+
+<form style="font-family: 'Lucida Console', 'Courier New', monospace;" onSubmit="showPass(this, event)">
     Please Enter Passcode:
-    <input type = "password" name = "pwd" /> 
-    <input type = "submit" value = "Submit" style="font-family: 'Lucida Console', 'Courier New', monospace;
-    color: Blue;
-" />
+    <input type="password" name="pwd" /> 
+    <input type="submit" value="Submit" style="font-family: 'Lucida Console', 'Courier New', monospace; color: Blue;" />
 </form>
