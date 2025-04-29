@@ -101,6 +101,10 @@ a {
     border-radius: 16px;
     position: relative;
 }
+
+.gamesbutton .button-text p {
+    text-shadow: none;
+}
   
 .gamesbutton img {
     width: calc(100% - 24px);
@@ -126,6 +130,7 @@ a {
     left: 0;
     right: 0;
     text-align: center; 
+    text-shadow: none;
 }
 
 .button-container {
