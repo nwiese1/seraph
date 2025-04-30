@@ -1,14 +1,17 @@
 <script>
+
 function showPass(form, e) {
     e.preventDefault();
+
     var pass = form.pwd.value;
+
     var pass1 = "chat1";
     var pass2 = "chat2";
     var pass3 = "chat3";
     var pass4 = "chat4";
 
     if (pass === pass1) {
-        alert('Welcome to Chat 1.');
+        alert("Welcome to Chat 1.");
         window.location.href = "chat1.html";
     } else if (pass === pass2) {
         alert("Welcome to Chat 2.");
@@ -23,10 +26,29 @@ function showPass(form, e) {
         alert("Incorrect access code.");
     }
 }
+
 </script>
 
+<div style="font-family: 'Lucida Console', 'Courier New', monospace; margin-bottom: 20px;">
+
+    <strong>Access Code Guide:</strong><br><br>
+
+    <span>chat1 - Private Chat</span><br>
+
+    <span>chat2 - Phoenix Hub Main Chat</span><br>
+
+    <span>chat3 - Phoenix Hub Moderation Chat</span><br>
+
+    <span>chat4 - Chat Multi Panel</span><br>
+
+</div>
+
 <form style="font-family: 'Lucida Console', 'Courier New', monospace;" onSubmit="showPass(this, event)">
+
     Please Enter Passcode:
-    <input type="password" name="pwd" /> 
-    <input type="submit" value="Submit" style="font-family: 'Lucida Console', 'Courier New', monospace; color: Blue;" />
+    
+    <input type="password" name="pwd" />
+    
+    <input type="submit" value="Submit" style="font-family: 'Lucida Console', 'Courier New', monospace; color: blue;" />
+
 </form>
